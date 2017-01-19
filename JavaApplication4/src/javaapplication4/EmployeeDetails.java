@@ -53,4 +53,8 @@ public class EmployeeDetails {
    EmployeeDetails obj = new EmployeeDetails();
    obj.Menu();
      }
+
+    void getdetail(String david, String henson, int i, int i0, String manager, String admin) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
   }
