@@ -18,10 +18,10 @@ public class Rectangle {
   public Rectangle ( double len , double brd) {
      length = len;
      breadth = brd;
-
-   public boolean equals (Object obj) {
-    Rectangle rec  = (Rectangle) obj;
-   if (this. length == rec.length && this.breadth == rec.breadth) {
+  }
+   public boolean equal(Object obj) {
+    Rectangle dim  = (Rectangle) obj;
+   if (this. length == dim.length && this.breadth == dim.breadth) {
   
      return true;
      }
@@ -30,7 +30,12 @@ public class Rectangle {
     }
   }
       public static void main(String [] arg) {
-       Rectangle obj1 = new Rectangle (10.5 , 23.6);
+       Rectangle obj1 = new Rectangle (10.5 , 33.6);
        Rectangle obj2 = new Rectangle (10.5 , 33.6);
+       if(obj1.equal(obj2)){
+           System.out.println("Both are equal");
+       }else{
+           System.out.println("Both are differnt");
+       }
 }
 }
